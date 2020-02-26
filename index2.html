@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSky</title>
+    <link rel = "icon" href ="cloud.jpg" type = "image/x-icon"> 
+</head>
+
+<style>
+    
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-size: 100%;
+	    font: inherit;
+	    vertical-align: baseline;
+    }
+
+     /* HTML5 display-role reset for older browsers */
+     article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+	    display: block;
+    }
+    body {
+	    line-height: 1;
+    }
+    ol, ul {
+	    list-style: none;
+    }
+    blockquote, q {
+	    quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+	    content: '';
+	    content: none;
+    }
+    table {
+	    border-collapse: collapse;
+	    border-spacing: 0;
+    }
+
+    /* my actual code starts from here */
+
+    #none{
+        background-color:rgb(42, 37, 37);
+        height:2vh;
+        width:auto;
+    }
+    nav{
+        color:white;
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+    }
+    #l1:hover,#l2:hover,a:hover,#l4:hover{
+        color:rgb(255, 255, 255,0.7);
+        cursor:pointer;
+    }
+    
+    #logo-back{
+        width:20%;
+        height:6vh;
+        background-color:rgb(42, 37, 37);
+        font-family:fantasy;
+        font-weight: 400;
+        font-size: large;
+        cursor:context-menu; 
+        }
+
+    #logo{
+        width:50px;
+        height:25px;
+    }
+
+    #l1{
+        width:20%;
+        height:6vh;
+        background-color:rgb(42, 37, 37);
+    }
+    #l2{
+        width:20%;
+        height:6vh;
+        background-color:rgb(42, 37, 37);
+    }
+    
+    #l3{
+        width:20%;
+        height:6vh;
+        background-color:rgb(42, 37, 37);
+    }
+
+    #l4{
+        width:20%;
+        height:6vh;
+        padding-right: 50px;
+        background-color:rgb(42, 37, 37);
+    }
+
+    a{
+        color:white;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color:white;
+        text-decoration: none;
+    }
+
+    #company{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align:center;
+        font-size:50px;
+    }
+
+    #caption{
+        text-align:center;
+    }
+
+    .application{
+        font-family:'Courier New', Courier, monospace;
+        text-align: left;
+        border-style: solid;
+        border-width:1px;
+        width:480px;
+        height:490px;
+        margin:auto;
+        border-color: black;
+        font-size:17px;
+        background-color:white;
+        padding-top: 15px;
+    }
+
+    #name-text,#email-text,#mobile-text,#dropdown-text,
+    #dropdown,#check-text,#cbox1,#cbox2,#cbox3,#cbox4{
+        position: relative;
+        left:11px;
+    }
+
+    #cbox1-text,#cbox2-text,#cbox3-text,#cbox4-text{
+        padding:5px;
+    }
+
+    #name{
+        position: relative;
+        left:150px;
+        padding:7px;
+    }
+
+    #email{
+        position: relative;
+        left:141px;
+        padding:7px;
+    }
+
+    #mobile{
+        position: relative;
+        left:60px;
+        padding:7px;
+    }
+
+    #dropdown{
+        position: relative;
+        top:5px;
+        padding:7px;
+    }
+
+    #back{
+        background:url("background.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #submit{
+        text-align: center;
+        position: relative;
+        left:215px;
+        bottom:10px;
+        padding:7px;
+    }
+
+</style>
+
+<body>
+    <div id="none">
+    </div>
+    <nav>
+        <div id="logo-back">
+            <img id="logo" src="cloud.jpg">
+            CloudSky
+        </div>
+        <div id="l1">Business</div>
+        <div id="l2">News</div>
+        <div id="l3"><a href="index2.html">Job Oppurtunities with Us </a></div>
+        <div id="l4">More</div>
+    </nav>
+
+
+    <div id="back">
+    <br><br>
+    <h1 id="company">
+        Application Form
+    </h1>
+
+    <br>
+    <p id="caption">
+        Fill this form to get a chance to work with us
+    </p>
+
+    <br><br><br><br><br>
+
+    <form class="application">
+        <br>
+        <label id="name-text">
+            Name
+        </label>
+        <input type="text" id="name" placeholder="Name">
+        <br><br><br>
+
+        <label id="email-text">
+            Email
+        </label>
+        <input type="Email" id="email" placeholder="example@gmail.com">
+        <br><br><br>
+
+        <label id="mobile-text">
+            Mobile number
+        </label>
+        <input type="text" id="mobile" placeholder="Mobile number">
+        <br><br><br>
+
+        <label id="dropdown-text">
+            How much work experience do you have ?
+        </label>
+        <select id="dropdown">
+            <option>1 year</option>
+            <option>2 year</option>
+            <option>3 year</option>
+            <option>More than 3 years</option>
+        </select>
+        <br><br><br>
+
+        <label id="check-text">
+            What skills you are good at?
+        </label>
+        <br>
+
+        <input type="checkbox" id="cbox1">
+        <label id="cbox1-text">
+            Python
+        </label>
+        <br>
+        <input type="checkbox" id="cbox2">
+        <label id="cbox2-text">
+            Machine learning
+        </label>
+        <br>
+        <input type="checkbox" id="cbox3">
+        <label id="cbox3-text">
+            Linux
+        </label>
+        <br>
+        <input type="checkbox" id="cbox4">
+        <label id="cbox4-text">
+            Networking
+        </label>
+
+        <br><br><br>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    <br><br><br><br><br><br><br>
+    </div>
+</body>
+</html>
